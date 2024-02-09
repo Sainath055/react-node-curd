@@ -22,6 +22,7 @@ const db = createConnection({
   multipleStatements: true,
 });
 
+// just for testing purpose
 app.get("/users", (req, res) => {
   db.query("SELECT * FROM users", (error, results) => {
     if (error) {
